@@ -11,10 +11,10 @@ console.log(valueEl);
 
 decrementBtn.addEventListener("click", () => {
   counterValue -= 1;
-  decrementBtn.textContent = counterValue;
+  valueEl.textContent = counterValue;
 });
 
 incrementBtn.addEventListener("click", () => {
   counterValue += 1;
-  incrementBtn.textContent = counterValue;
+  valueEl.textContent = counterValue;
 });
