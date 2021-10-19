@@ -14,6 +14,7 @@ console.log(body);
 buttonChangeColor.addEventListener("click", onButtonClick);
 
 function onButtonClick() {
-  spanColor.textContent = getRandomHexColor();
-  body.setAttribute("style", `background: ${getRandomHexColor()}`);
+  const currentColor = getRandomHexColor();
+  body.setAttribute("style", `background: ${currentColor}`);
+  spanColor.textContent = currentColor;
 }
